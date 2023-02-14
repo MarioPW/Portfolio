@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>MarioPortfolio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- main section -->
+    <section id="index">
+        <div class="content">
+            <header>
+                <div class="header-content">
+                    <div class="logo"><a href="#index"><img src="./assets/images/logo.png" alt="Mario Triana Logo"></a>
+                    </div>
+                    <nav id="nav" class="">
+                        <ul class="nav-links" id="links">
+                            <li><a href="#index" class="selected" onclick="select(this)">Home</a></li>
+                            <li><a href="#abaut-me" onclick="select(this)">Abaut Me</a></li>
+                            <li><a href="#services" onclick="select(this)">Services</a></li>
+                            <li><a href="#skills" onclick="select(this)">Skills</a></li>
+                            <li><a href="#portfolio" onclick="select(this)">Projects</a></li>
+                            <li><a href="#contact" onclick="select(this)">Contact</a></li>
+                            <li><a href="./cv/CV.html" onclick="select(this)">CV</a></li>
+                        </ul>
+                    </nav>
+
+                    <div id="nav-icon" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="web">
+                        <a href="https://www.linkedin.com/in/mario-triana-4ba296251/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/MarioPW"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="introduction">
+                <p class="hello">Hello!!!</p>
+                <h2>I'm <span>Mario Triana</span> Web Developer</h2>
+                <p class="description">"If you can imagine it, you can program it."</p>
+                <a href="#portfolio">Projects</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABAUT -->
+
+    <section id="abaut-me">
+        <div class="photo-container">
+            <img src="./assets/images/profile_photo.png" alt="Profile Photo">
+        </div>
+        <div class="abaut-me">
+            <p class="section-title">Abaut Me</p>
+            <h2>Hello! I'm <span>Mario Triana</span></h2>
+            <h3>Web Developer</h3>
+            <p>Passionate about programming, I define myself as a person who wants to learn and be in constant
+                evolution. Since I discovered this awesom world more than one year ago, I have been studyng, learning
+                and coding every single day. Today I feel I'm ready to enter the job market and in this way, continue to
+                evolve and contribute as much as I can.</p>
+            <a download="Mario-Triana-CV" href="./cv/assets/images/cv.png"><i class="fa-sharp fa-solid fa-file-arrow-down"></i> CV-PNG</a>
+            <a download="Mario-Triana-CV" href="./cv/assets/images/cv.pdf"><i class="fa-sharp fa-solid fa-file-arrow-down"></i> CV-PDF</a>
+        </div>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <h3 class="tittle-section">services</h3>
+        <div class="row" id="service">
+            <!-- JS SERVICES -->
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <div class="skills-container" id="skills">
+        <h3 class="section-title">Skills</h3>
+        <div class="skill bg-blur" id="skill">
+            <!-- JS SKILLS -->
+        </div>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio">
+            <h3 class="section-title">Projects</h3>
+            <div class="row" id="projects">
+                <!-- PROJECTS JS -->
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+            <h3 class="section-title">Contact</h3>
+            <div class="form-container">
+                <form id="form" class="bg-blur">
+                    <div class="middle row field">
+                        <input type="text" placeholder="Name:" name="from_name" id="from_name">
+                        <input type="text" placeholder="Email:" name="email_id" id="email_id">
+                    </div>
+                    <div class="row field">
+                        <input class="full-input" type="text" placeholder="Subject:" name="reply_to" id="reply_to">
+                    </div>
+                    <div class="row field">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
+                            class="full-input"></textarea>
+                    </div>
+                    <input type="submit" value="Send Email" class="btn" id="button">
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>@Copy Right-2023</p>
+            <div class="web">
+                <a href="https://www.linkedin.com/in/mario-triana-4ba296251/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/MarioPW"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </footer>
+        <script src="./index.js" type="module"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+            emailjs.init('j39vfTMpBfmRT6xeY')
+        </script>
+</body>
+
+</html>
