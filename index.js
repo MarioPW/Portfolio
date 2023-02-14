@@ -112,14 +112,15 @@ const projectsList = [
         'name': 'QUIZ',
         'description': 'Quiz game made in JS' ,
         'imgLink': './assets/images/project-images/DALL·E-Quiz.png',
-        'siteLink': "https://mariopw.github.io/Quiz/"
+        'siteLink': "https://mariopw.github.io/Quiz/",
+        'repoLink': 'https://github.com/MarioPW/Quiz'
     },
     {
         'name': 'Recipe Calculator',
         'description': "Recipe calculator made in JS",
         'imgLink': './assets/images/project-images/DALL·E-recipe-calculator.png',
         'siteLink': "https://mariopw.github.io/Recipe-Calculator/",
-        'repoLink': 'https://github.com/MarioPW/Quiz'
+        'repoLink': 'https://github.com/MarioPW/Recipe-Calculator'
     }
 ]
 
@@ -136,7 +137,6 @@ function getProject(){
                     <p>${projectsList[i].name}</p>
                     <p>${projectsList[i].description}</p>
                     <p><a href="${projectsList[i].siteLink}">Go Website</a></p>
-
                     <p><a href="${projectsList[i].repoLink}">Go Repository</a></p>
                 
             </div>
