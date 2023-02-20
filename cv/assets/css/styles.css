@@ -72,79 +72,6 @@ header{
    display: none;
    cursor: pointer; 
 }
-@media (max-width: 768px){
-    body{
-        padding-top: 70px;
-        padding: 90px 0px 0px;
-    }
-    header{
-        height: 60px;
-    }
-    .logo img{
-        display: flex;
-        height: 40px;
-  
-    }
-    i{
-        color: aliceblue;
-    }
-    .nav-menu{
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        background-color: rgba(0, 12, 102);
-        position: fixed;
-        left: 0;
-        top: 60px;
-        width: 100%;
-        padding: 20px 0;
-        height: calc(100% - 600px);
-        overflow-y: auto;
-        left: 100%;
-        transition: left 0.3s;
-    }
-    .nav-menu-item{
-        line-height: 70px;
-    }
-    .nav-menu-link:hover,
-    .nav-menu-link-active{
-        background: none;
-        color: #D60000;
-    }
-    .nav-toggle{
-        display: block;
-    }
-    .nav-menu-visible{
-        left: 0;
-    }
-    .nav-toggle:focus:not(:focus-visible){
-        outline: none;
-    }
-    /* CV */
-    .content{
-        display: block !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    .content ul{
-        font-size: 14px;
-        margin: auto;
-        padding: auto;
-    }
-   
-    #skills{
-        width: 80% !important;
-        text-align: justify;
-        padding: 11% !important;
-    }
-    #abaut_me{
-        width: 80% !important;
-        padding: 0 11% 11% !important;
-    }
-    .content h2, h3{
-        margin: 11px;
-    }
-}
 
 /* CV */
 
@@ -233,4 +160,92 @@ li,p{
     margin-left: 15%;
     padding: 1px;
     color: aliceblue;
+}
+@media (max-width: 768px){
+    body{
+        padding-top: 70px;
+        padding: 90px 0px 0px;
+    }
+    header{
+        height: 60px;
+    }
+    .logo img{
+        display: flex;
+        height: 40px;
+    }
+    i{
+        color: aliceblue;
+    }
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: rgba(0, 12, 102);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 600px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item{
+        line-height: 40px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link-active{
+        background: none;
+        color: #D60000;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-menu-visible{
+        left: 0;
+    }
+    .nav-toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+    /* CV */
+   
+    #top h1 {
+        padding: 29px;
+        font-size: 28px;
+        color: aliceblue;
+    }
+    #top h1 section{
+        padding-left: 5px;
+        font-size: 16px;
+    }
+    #nav-visible{
+        height: fit-content;
+    }
+    #nav-visible li{
+        font-size: 14px;
+    }
+    .content{
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .content ul{
+        font-size: 14px;
+        margin: auto;
+        padding: auto;
+    }
+   
+    #skills{
+        width: 80% !important;
+        text-align: justify;
+        padding: 11% !important;
+    }
+    #abaut_me{
+        width: 80% !important;
+        padding: 0 11% 11% !important;
+    }
+    .content h2, h3{
+        margin: 11px;
+    }
 }
