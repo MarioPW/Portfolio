@@ -128,14 +128,14 @@ function servicesGetter() {
 const projectsList = [
   {
     name: "QUIZ",
-    description: "Quiz game made in JS",
+    description: "A Quiz game made in JS",
     imgLink: "./assets/images/project-images/DALL·E-Quiz.png",
     siteLink: "https://mariopw.github.io/Quiz/",
     repoLink: "https://github.com/MarioPW/Quiz",
   },
   {
     name: "Recipe Calculator",
-    description: "Recipe calculator made in JS",
+    description: "A Recipe calculator made in JS",
     imgLink: "./assets/images/project-images/DALL·E-recipe-calculator.png",
     siteLink: "https://mariopw.github.io/Recipe-Calculator/",
     repoLink: "https://github.com/MarioPW/Recipe-Calculator",
